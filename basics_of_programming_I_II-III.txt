@@ -1,0 +1,218 @@
+Learn the essential programming concepts of variables, operators, and data types.
+
+What is programming? --collaboration b/w humans and computers.
+
+
+    Programming is the mental process of thinking up instructions to give to a machine (like a computer).
+    Coding is the process of transforming those ideas into a written language that a computer can understand.
+
+//VARIABLES 
+
+variable --> repetition 
+
+When we use a value without assigning it to a variable, that’s known as hardcoding. While it’s sometimes faster to initially hardcode values in your program, in the long run you’ll run into trouble — especially if you need to change what those values are. 
+
+Variables allow us to store information
+Variables allow us to quickly reuse a value in our program.
+Variables let us easily change a value in our program
+
+//Data Types
+
+Learn about data types, the building blocks of programming. 
+
+In programming, there’s a special group of data types called primitives. Primitives are the most basic data types, so basic that you can find them in pretty much every programming language. They include:
+
+    Numbers
+    Strings
+    Boolean values (True or False)
+
+FORTRAN. Its name stands for FORmula TRANslating system.
+
+Grace Hopper wrote the first compiler, A-0 
+
+In 1958, John McCarthy of MIT created the LISt Processing (or LISP) language.
+
+
+//strings 
+
+But why the name strings? Strings are a sequence of symbols, so we can think of each characters being strung together, like beads in a necklace.
+
+
+
+    To display data that uses text or symbols, like printing our name to the screen.
+    To add or remove text. Since strings are a linear sequence of characters, we can break strings into even smaller strings, or combine strings to make longer ones.
+    To modify characters. For example, we could capitalize the first letter of every word in a string if wanted to turn it into a title.
+    To let the computer communicate with us in a “human-readable” way, like displaying the rules of an online game.
+
+
+//booleans 
+
+So, what do we use booleans for?
+
+    To determine validity. For example, we want to know whether a meme is viral. If it’s been viewed more than 50 million times in less than a week, we’d say that it’s true that it went viral.
+    To make decisions. For example, if I get an email, the program checks that the email is new and it displays at the top of my inbox.
+
+
+//operators 
+
+
+This lesson looks at different ways we can use operators in programming, including:
+
+    Making calculations using arithmetic operators.
+    Comparing information using comparison operators.
+    Creating logical expressions using logical (aka Boolean) operators.
+
+   Some languages even use a triple-equal sign === to super-triple-check!  
+
+   comparison operators allow us to examine the relationship of two values
+
+
+Logical operators, also known as boolean operators, evaluate multiple boolean expressions. Rather than determining if one relationship is true or false, it looks at several relationships by connecting them with logical operators and then determining the logic/validity of the overall expression.
+
+//functions --> reusable/flexible/modular
+
+Learn about functions: what they are, why programmers use them, and where they use them.
+
+reusuability 
+
+A function is a sequence of instructions that performs a specific task, packaged as a unit.
+
+Conditional statements or conditional control structures allow a program to have different behaviors depending on certain conditions being met.
+
+Intuitively, this mimics the way humans make simple decisions and act upon them. For example, reasoning about whether to go outside might look like:
+
+    Condition: Is it raining outside?
+        If it is raining outside, then bring an umbrella.
+        Otherwise, do not bring an umbrella.
+
+We could keep adding clauses to make our reasoning more sophisticated, such as “If it is sunny, then wear sunscreen”.
+
+
+Functions for Flexibility
+
+
+    A function is a sequence of instructions that performs a specific task, packaged as a unit.
+    When we define a function, we specify the instructions, inputs, and name of the function.
+    When we call a function, all of its instructions are executed.
+    Functions can be executed many times, making its instructions reusable.
+    Functions can have parameters, which accept input values, making its instructions flexible.
+    Functions organize a program into distinct units, making interchanging and editing them easier. This makes your entire program organized and modular.
+
+
+
+Control Flow
+
+
+Loop
+
+Repeat a sound four times a measure.
+
+Computers are good at repetitive tasks: they exactly follow instructions and perform them quickly. But if the programmer has to write the same instructions for every repetition, they waste time and increase the chances of a mistake
+
+Errors, or exceptions, happen all the time in programming. You can’t escape them. But you can handle them gracefully.
+
+In exception handling, two sets of instructions are defined. The first set is executed, and if an exception occurs, the first set is stopped and the second set of instructions is executed.
+
+
+Review
+
+Well done! Control flow is a fundamental concept in programming, and learning the basics will serve you wherever your path leads, regardless of language or domain. In review:
+
+    Control flow is the order in which instructions are executed.
+    Control structures alter control flow in a program. You learned three structures, each suited for a different scenario:
+        Conditional: “if some condition is met, then do X. Otherwise, do Y”.
+        Loop: “do something Z number of times” or “do something repeatedly until some condition is met”.
+        Exception: “do steps A, B, C. If an error occurs, stop, and do steps J, K, L”.
+
+
+
+//lists 
+
+Learn how to use the the list data type to store and edit ordered data
+
+Introduction to Lists
+
+When we start writing more complex programs, we’ll start working with more pieces of data. But data can get messy real fast if we’re not careful.
+
+To keep our data tidy, we’ll want to use data structures. Data structures are formats that we can use to keep track of our data in an organized fashion.
+
+Lists are one very basic data structure. Programmers use lists as a container to store multiple pieces of information that relate to each other in some way
+
+
+Lists: Review
+
+Congratulations! Now you’ve learned about another data type known as a list.
+
+    A list is an ordered sequence of information
+    You can access an item in a list by using its index position
+    You can append items to the end of the list or insert them in the middle
+    You can also remove an item from the end or middle of a list
+
+
+
+Loops
+
+Learn about loops: what they are, why programmers use them, and where they use them. 
+
+Introduction to Loops
+
+How do we use code to tell a computer this: “Create a variable and call a function 15 times”? 
+
+These special structures in programming will give you the ability to repeat instructions multiple times without writing the instructions out multiple times.
+
+This lesson will cover:
+
+    for loops
+    while loops
+    for each loops
+
+For Loops
+
+When we give instructions once and tell the computer how many times to repeat them, we are using a for loop, or a count-controlled loop. It executes a set of instructions for a specified number of times:
+
+For 10 times:
+  placeTile('pink')
+  placeTile('orange')
+  placeTile('mint')
+
+
+When a computer receives this program it sets a counter to 0 and executes the instructions in the body of the loop. After each iteration (one pass through the instructions), it advances the counter by 1. The process repeats until the counter is 10, meaning 10 iterations are completed.
+
+The for loop is good to use when you know the number of times you’d like to perform a task before you begin, like printing 3 copies of a document or inserting 8 rows into a table.
+
+This is a while loop, or condition-controlled loop. It repeats a set of instructions while that condition is true. In this case, the computer will place tiles while there are pink tiles available.
+
+In a while loop, the computer checks if the condition is satisfied. If it is, it executes the tasks in the loop body. It checks the condition again, and repeats. This continues until the condition is not satisfied, and it stops executing the tasks.
+
+Use while loops when you know when a program should stop, but not the number of times it should repeat.
+
+Well done! Loops are commonly used in programming because they save time, reduce error, and are easy to read. Being comfortable with each type of loop will make you a better programmer. In review:
+
+    A loop is a structure in programming where the instructions are written once, but a computer can execute them multiple times
+    Each execution of those instructions is called an iteration
+    For loops (count-controlled loops) repeat for a specified number of times
+    While loops (condition-controlled loops) repeat until a condition changes
+    For each loops (collection-controlled loops) repeat for each item in a collection
+
+
+
+---------------------------------------------------------------------------------------
+//todo 
+
+try FORTRAN/COBOL/LISP
+alternative to rtecaptch 
+study recaptcha 
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
+
+references:
+
+
+https://cs.brown.edu/~adf/programming_languages.html
