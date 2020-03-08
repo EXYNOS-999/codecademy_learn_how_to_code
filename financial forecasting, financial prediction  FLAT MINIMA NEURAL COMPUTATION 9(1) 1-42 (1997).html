@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html><head>
+<title>financial forecasting, financial prediction: 
+FLAT MINIMA NEURAL COMPUTATION 9(1):1-42 (1997) </title>
+<meta name="description" content="FLAT MINIMA NEURAL COMPUTATION 9(1):1-42 (1997) ">
+<meta name="keywords" content="fm">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Generator" content="LaTeX2HTML v2K.1beta">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="STYLESHEET" href="financial%20forecasting,%20financial%20prediction%20%20FLAT%20MINIMA%20NEURAL%20COMPUTATION%209(1)%201-42%20(1997)_files/fm.css">
+
+<link rel="next" href="http://people.idsia.ch/~juergen/fm/node1.html">
+</head><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style>
+
+<body>
+<!--Navigation Panel-->
+<a name="tex2html12" href="http://people.idsia.ch/~juergen/fm/node1.html">
+<img alt="next" src="file:/usr/share/latex2html/icons/next.png" width="37" height="24" border="0" align="BOTTOM"></a> 
+<img alt="up" src="file:/usr/share/latex2html/icons/up_g.png" width="26" height="24" border="0" align="BOTTOM"> 
+<img alt="previous" src="file:/usr/share/latex2html/icons/prev_g.png" width="63" height="24" border="0" align="BOTTOM">   
+<br>
+<b> Next:</b> <a name="tex2html13" href="http://people.idsia.ch/~juergen/fm/node1.html">BASIC IDEAS / OUTLINE</a>
+<br>
+<br>
+<!--End of Navigation Panel-->
+
+<p>
+</p><h1 align="CENTER">FLAT MINIMA 
+<br><font size="-1">N<small>EURAL </small>C<small>OMPUTATION 9(1):1-42 (1997)</small> </font>
+</h1>
+<p align="CENTER"><strong>Sepp Hochreiter, TUM
+<br>
+Jürgen Schmidhuber, IDSIA
+<br>
+<br><font size="-1">http://www.idsia.ch/~juergen</font>
+</strong></p>
+<p align="CENTER"><strong>March 1996</strong></p>
+
+<p>
+
+</p><h3>Abstract:</h3>
+<div>
+
+<p>
+We present a new algorithm for finding low complexity neural
+networks with high generalization capability.  The algorithm 
+searches for a ``flat'' minimum of the error function. A flat 
+minimum is a large connected region in weight-space where the 
+error remains approximately constant. An MDL-based, Bayesian 
+argument suggests that flat minima correspond to ``simple'' 
+networks and low expected overfitting.  The argument is based 
+on a Gibbs algorithm variant and a novel way of splitting
+generalization error into underfitting and overfitting error.
+Unlike many previous approaches, ours does not require Gaussian 
+assumptions and does not depend on a ``good'' weight prior -
+instead we have a prior over input/output functions, thus
+taking into account net architecture and training set. Although 
+our algorithm requires the computation of second order derivatives, 
+it has backprop's order of complexity. Automatically, it effectively 
+prunes units, weights, and input lines.  Various experiments with 
+feedforward and recurrent nets are described.  In an application 
+to stock market prediction, flat minimum search outperforms
+(1) conventional backprop, (2) weight decay, (3) ``optimal 
+brain surgeon'' / ``optimal brain damage''. We also provide 
+pseudo code of the algorithm (omitted from the NC-version).
+
+</p><p>
+</p></div>
+<p>
+
+</p><p>
+<br></p><hr>
+<!--Table of Child-Links-->
+<a name="CHILD_LINKS"></a>
+
+<ul>
+<li><a name="tex2html14" href="http://people.idsia.ch/~juergen/fm/node1.html">BASIC IDEAS / OUTLINE</a>
+</li><li><a name="tex2html15" href="http://people.idsia.ch/~juergen/fm/node2.html">TASK / ARCHITECTURE / BOXES</a>
+</li><li><a name="tex2html16" href="http://people.idsia.ch/~juergen/fm/node3.html">THE ALGORITHM</a>
+</li><li><a name="tex2html17" href="http://people.idsia.ch/~juergen/fm/node4.html">DERIVATION OF THE ALGORITHM</a>
+<ul>
+<li><a name="tex2html18" href="http://people.idsia.ch/~juergen/fm/node5.html">MDL-JUSTIFICATION OF FLATNESS CONDITION 2</a>
+</li></ul>
+<br>
+</li><li><a name="tex2html19" href="http://people.idsia.ch/~juergen/fm/node6.html">EXPERIMENTAL RESULTS</a>
+<ul>
+<li><a name="tex2html20" href="http://people.idsia.ch/~juergen/fm/node7.html">EXPERIMENT 1 - noisy classification.</a>
+</li><li><a name="tex2html21" href="http://people.idsia.ch/~juergen/fm/node8.html">EXPERIMENT 2 - recurrent nets.</a>
+</li><li><a name="tex2html22" href="http://people.idsia.ch/~juergen/fm/node9.html">EXPERIMENT 3 - stock market prediction (1).</a>
+</li><li><a name="tex2html23" href="http://people.idsia.ch/~juergen/fm/node10.html">EXPERIMENT 4 - stock market prediction (2).</a>
+</li><li><a name="tex2html24" href="http://people.idsia.ch/~juergen/fm/node11.html">EXPERIMENT 5 - stock market prediction (3).</a>
+</li><li><a name="tex2html25" href="http://people.idsia.ch/~juergen/fm/node12.html">DETAILS / PARAMETERS</a>
+</li></ul>
+<br>
+</li><li><a name="tex2html26" href="http://people.idsia.ch/~juergen/fm/node13.html">RELATION TO PREVIOUS WORK</a>
+</li><li><a name="tex2html27" href="http://people.idsia.ch/~juergen/fm/node14.html">LIMITATIONS / FINAL REMARKS / FUTURE RESEARCH</a>
+</li><li><a name="tex2html28" href="http://people.idsia.ch/~juergen/fm/node15.html">APPENDIX - THEORETICAL JUSTIFICATION</a>
+<ul>
+<li><a name="tex2html29" href="http://people.idsia.ch/~juergen/fm/node16.html">A.1. FLAT NETS: THE MOST PROBABLE HYPOTHESES</a>
+</li><li><a name="tex2html30" href="http://people.idsia.ch/~juergen/fm/node17.html">A.2. WHY DOES THE HESSIAN DECREASE?</a>
+</li><li><a name="tex2html31" href="http://people.idsia.ch/~juergen/fm/node18.html">A.3. EFFICIENT IMPLEMENTATION OF THE ALGORITHM</a>
+<ul>
+<li><a name="tex2html32" href="http://people.idsia.ch/~juergen/fm/node19.html">A.3.1 EXPLICIT DERIVATIVE OF EQUATION (1)</a>
+</li><li><a name="tex2html33" href="http://people.idsia.ch/~juergen/fm/node20.html">A.3.2. FAST MULTIPLICATION BY THE HESSIAN</a>
+</li></ul>
+</li><li><a name="tex2html34" href="http://people.idsia.ch/~juergen/fm/node21.html">A.4. PSEUDO CODE OF THE ALGORITHM</a>
+<ul>
+<li><a name="tex2html35" href="http://people.idsia.ch/~juergen/fm/node22.html">Acknowledgments</a>
+</li></ul>
+</li></ul>
+<br>
+</li><li><a name="tex2html36" href="http://people.idsia.ch/~juergen/fm/node23.html">Bibliography</a>
+</li><li><a name="tex2html37" href="http://people.idsia.ch/~juergen/fm/node24.html">About this document ...</a>
+</li></ul>
+<!--End of Table of Child-Links-->
+<hr>
+<!--Navigation Panel-->
+<a name="tex2html12" href="http://people.idsia.ch/~juergen/fm/node1.html">
+<img alt="next" src="file:/usr/share/latex2html/icons/next.png" width="37" height="24" border="0" align="BOTTOM"></a> 
+<img alt="up" src="file:/usr/share/latex2html/icons/up_g.png" width="26" height="24" border="0" align="BOTTOM"> 
+<img alt="previous" src="file:/usr/share/latex2html/icons/prev_g.png" width="63" height="24" border="0" align="BOTTOM">   
+<br>
+<b> Next:</b> <a name="tex2html13" href="http://people.idsia.ch/~juergen/fm/node1.html">BASIC IDEAS / OUTLINE</a>
+<!--End of Navigation Panel-->
+<address>
+Juergen Schmidhuber
+2003-02-13
+</address>
+<br><br>Back to <a href="http://www.idsia.ch/~juergen/finance.html">Financial Forecasting page</a>
+
+</body></html>
